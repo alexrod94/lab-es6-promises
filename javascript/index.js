@@ -91,7 +91,7 @@ obtainInstruction("steak", 0)
     document.querySelector("#steak").innerHTML += `<li>Steak is ready!</li>`;
     // Bonus 1
     document.querySelector("#steakImg").removeAttribute("hidden");
-  });
+  }).catch;
 
 // Iteration 3 using async/await
 async function makeBroccoli() {
@@ -121,6 +121,11 @@ async function makeBroccoli() {
   // Bonus 1
   document.querySelector("#broccoliImg").removeAttribute("hidden");
 }
+
+// const makeBroccoliArrow = async () => {
+//   const step1 = await obtainInstruction('broccoli', 0);
+//   console.log(step1)
+// }
 
 makeBroccoli();
 
